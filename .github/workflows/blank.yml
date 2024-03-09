@@ -21,4 +21,4 @@ jobs:
       run: |
         arduino-cli core update-index
         arduino-cli core install arduino:avr
-        arduino-cli compile --fqbn arduino:avr:uno ${{github.workspace}}/Arduino_clock.ino
+        arduino-cli compile --fqbn arduino:avr:uno Arduino_clock.ino
