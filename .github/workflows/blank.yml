@@ -8,9 +8,7 @@ jobs:
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true  # Set the environment variable
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: v2  # Explicitly specify a stable release for actions/checkout
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
