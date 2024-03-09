@@ -1,0 +1,17 @@
+name: Arduino CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Arduino CLI
+      uses: arduino/setup-arduino-cli@v1.0.0
+
+    - name: Compile Arduino Sketch
+      run: |
+        arduino-cli core update-index
+        arduino-cli core install arduino:avr
+        arduino-cli compile --fqbn arduino:avr:uno ${{github.workspace}}/Arduino_clock.ino
