@@ -1,5 +1,5 @@
 # 🧸Kindroid: Arduino Environment Monitor🧸
-
+[![Arduino CI](https://github.com/kinderasteroid/Kindroid-1.0/actions/workflows/blank.yml/badge.svg)](https://github.com/kinderasteroid/Kindroid-1.0/actions/workflows/blank.yml)
 ## Overview
 
 **Kindroid** is an innovative device crafted to improve the comfort of indoor spaces by providing real-time data on temperature, humidity, and time. Powered by Arduino, this compact system leverages a DHT11 sensor and a 16x2 LCD screen to offer vital environmental insights in homes, offices, and classrooms.
