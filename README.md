@@ -1,4 +1,4 @@
-# 🧸Kindroid: Arduino Environment Monitor🧸
+ # 🧸Kindroid: Arduino Environment Monitor🧸
 [![Arduino CI](https://github.com/kinderasteroid/Kindroid-1.0/actions/workflows/blank.yml/badge.svg)](https://github.com/kinderasteroid/Kindroid-1.0/actions/workflows/blank.yml)
 ## Overview
 
