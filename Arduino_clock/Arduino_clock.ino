@@ -15,15 +15,16 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 unsigned long lastTime = 0;
 unsigned long currentTime = 0;
 unsigned long elapsedTime = 0;
-
+const int analogInPin = A0;
 // Initial time (24-hour format)
-int hours = 18;
-int minutes = 24;
-int seconds = 0;
+int hours = 21;
+int minutes = 30 ;
+int seconds = 20;
 
 void setup() {
   analogWrite(6,140);
   lcd.begin(16, 2);
+  pinMode(8, OUTPUT);
   lcd.print("  Digital Clock  ");
 }
 
@@ -35,6 +36,12 @@ void loop() {
     lastTime = currentTime;
     updateTime();
     displayTime();
+     int sensorValue = analogRead(analogInPin);  // Read analog voltage
+     float voltage = sensorValue * (5.0 / 1023.0) ;
+     if (voltage<=4.5)
+     {
+      digitalWrite(8,HIGH);
+     }
   }
 }
 
